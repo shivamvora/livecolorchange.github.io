@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Viewer Designed by Shivam vora</title>
+    <style>
+        input{
+            width: 500px;
+            height: 60px;
+            font-size: 30px;
+        } 
+    </style>
+    <script>
+        function live(){
+            var x = document.getElementById("input").value;
+            var y = document.getElementById("result");
+            y.style.backgroundColor = x;
+        }
+
+    </script>
+
+</head>
+<body id="result">
+    
+    <center>
+        <h1>Live Color Viewer Created By Shivam Vora</h1>
+        <input id="input" oninput="live()"> <br><br>
+        
+    </center>
+</body>
+</html>
